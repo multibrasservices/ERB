@@ -1,0 +1,129 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background-color: #f4f7f6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: white;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 90%;
+    max-width: 600px;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.file-input {
+    display: block;
+    margin: 20px auto;
+    border: 2px dashed #007bff;
+    border-radius: 5px;
+    padding: 20px;
+    background-color: #f8f9fa;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+}
+
+.file-input:hover {
+    background-color: #e9ecef;
+    border-color: #0056b3;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+}
+
+.status {
+    margin-top: 20px;
+    font-size: 1em;
+}
+
+.hidden {
+    display: none;
+}
+
+.response-container {
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+    text-align: left;
+}
+
+.response-container h2 {
+    margin-top: 0;
+    font-size: 1.2em;
+    color: #495057;
+}
+
+.response-content {
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+.response-content pre {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    font-family: "Courier New", Courier, monospace;
+    background-color: #e9ecef;
+    padding: 15px;
+    border-radius: 4px;
+    color: #212529;
+}
+
+.response-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    font-size: 0.9em;
+}
+
+.response-table th,
+.response-table td {
+    border: 1px solid #dee2e6;
+    padding: 12px;
+    text-align: left;
+}
+
+.response-table th {
+    background-color: #007bff;
+    color: white;
+    font-weight: 600;
+    position: sticky;
+    top: 0;
+}
+
+.response-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.response-table tr:hover {
+    background-color: #e9ecef;
+}
